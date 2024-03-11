@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 4px solid #141313;}
+
+/*input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #080202;
+  box-sizing:border-box;
+
+}*/
+
+button {
+  background-color: #4e96d5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.GIRLS {
+  width: 20%;
+  border-radius: 10%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+ 
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("pic7.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 5px;
+  background-color: white;
+  position:absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 whitesmoke;
+}
+
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body>
+  <div class="bg" style="background-image: url('pic7.jpg');">
+    <div class="card">
+
+
+<form action="voterslogin.jsp" method="post">
+  <div class="imgcontainer">
+    <img src="GIRLS.jpg" alt="GIRLS" class="GIRLS">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>USERNAME</b></label>
+    <input class =" w3-input" type="text" placeholder="Enter Username" name="uname" required><br>
+
+    <label for="psw"><b>PASSWORD</b></label>
+    <input class="w3-input" type="password" placeholder="Enter Password" name="psw" required><br>
+        
+    <button type="submit">LOGIN</button><br>
+  </div>
+
+  <div class="container">
+    <div>
+      <span class="text" ><b>Not a member yet?</b><a href="reg.html"> <b>REGISTER!</b></a></span>
+  </div>
+</form>
+</div>
+  </div>
+</body>
+</html>
